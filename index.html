@@ -4,20 +4,34 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+   
   </head>
   <body>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <div id="colorSelectorContainer">
+        <label for="colorSelector">Color</label>
+        <input type="color"  name="colorSelector" id="colorSelector">
+      </div>
+      <div id="sizeSelectorContainer">
+        <label for="sizeSelector">Tamaño</label>
+        <input type="range" name="sizeSelector" id="sizeSelector" min='10' max="50" step="1">
+      </div>
+      <div id="shadedSelectorContainer">
+        <button id="shadedSelector">Shaded</button>
+      </div>
+      <div id="clearSelectorContainer">
+        <button id="clearSelector">Clear</button>
+      </div>
+      <div id="randomSelectorContainer">
+        <button id="randomSelector">Random Colors</button>
+      </div>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <div id="canvasContainer">
+
+      </div>
     </main>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
