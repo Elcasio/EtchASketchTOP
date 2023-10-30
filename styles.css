@@ -1,14 +1,40 @@
 * {
   box-sizing: border-box;
- margin:0;
- padding:0;
+  margin: 0;
+  padding: 0;
 }
-body{
+body {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10%;
+  height: 100vh;
+  background-color: beige;
 }
-#canvasContainer{
+#canvasContainer {
   aspect-ratio: 1;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: column;
+  width: 30%;
+  border: 1px red solid;
+  height: 80%;
+}
+#sizeSelector {
+  width: 80%;
+}
+#canvasContainer {
+  display: grid;
+  width: 30rem;
+  height: 30rem;
+}
+#canvasContainer > * {
+  width: auto;
+  height: auto;
+  background-color: white;
+  aspect-ratio: 1;
+}
+

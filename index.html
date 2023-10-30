@@ -5,20 +5,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-   
   </head>
   <body>
     <nav>
       <div id="colorSelectorContainer">
         <label for="colorSelector">Color</label>
-        <input type="color"  name="colorSelector" id="colorSelector">
+        <input type="color" name="colorSelector" id="colorSelector" />
       </div>
       <div id="sizeSelectorContainer">
         <label for="sizeSelector">Tamaño</label>
-        <input type="range" name="sizeSelector" id="sizeSelector" min='10' max="50" step="1">
+        <input
+          type="range"
+          name="sizeSelector"
+          id="sizeSelector"
+          min="2"
+          max="20"
+          value="4"
+          step="1"
+        />
       </div>
-      <div id="shadedSelectorContainer">
-        <button id="shadedSelector">Shaded</button>
+      <div id="eraseSelectorContainer">
+        <button id="eraseSelector">Erase</button>
       </div>
       <div id="clearSelectorContainer">
         <button id="clearSelector">Clear</button>
@@ -28,10 +35,8 @@
       </div>
     </nav>
     <main>
-      <div id="canvasContainer">
-
-      </div>
+      <div id="canvasContainer"></div>
     </main>
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
